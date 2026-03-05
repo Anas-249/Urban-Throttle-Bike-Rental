@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import gmail_logo from "./gmail_logo.svg";
 import facebook_logo from "./facebook_logo.svg";
 import instagram_logo from "./instagram_logo.svg";
@@ -90,7 +90,7 @@ export const assets = {
 
 export const menuLinks = [
     { name: "Home", path: "/" },
-    { name: "Cars", path: "/cars" },
+    { name: "Bikes", path: "/Bikes" },
     { name: "My Bookings", path: "/my-bookings" },
 ]
 
