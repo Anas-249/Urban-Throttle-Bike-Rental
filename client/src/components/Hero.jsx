@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { assets, cityList } from '../assets/assets'
 
 const Hero = () => {
-  const [pickUpLocation,setPickupLocation]=useState(' ')
+  const [pickUpLocation,setPickupLocation]=useState('')
   console.log('Hero component is rendering')
   return (
     <div className='h-screen flex flex-col items-center justify-center gap-14 bg-light text-center'>
