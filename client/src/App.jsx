@@ -5,6 +5,7 @@ import Home from './pages/HomeTemp'
 import CarDetails from './pages/CarDetails'
 import Cars from './pages/Cars'
 import MyBookings from './pages/MyBookings'
+import Fotter from './components/Fotter'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path ='/cars' element={<Cars/>}/>
         <Route path ='/my-bookings' element={<MyBookings/>}/>
       </Routes>
+      {!isOwnerPath && <Fotter /> }
     </>
   )
 }
