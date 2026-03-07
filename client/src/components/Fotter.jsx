@@ -69,7 +69,7 @@ const Fotter = () => {
           <h2 className="text-base font-medium text-gray-800 uppercase">Contact</h2>
 
           <ul className="mt-3 flex flex-col gap-1.5 text-sm">
-            <li>hitkara University</li>
+            <li>Chitkara University</li>
             <li>Rajpura, Punjab 140401</li>
             <li>+91 9876543210</li>
             <li>support@urbanthrottle.com</li>
