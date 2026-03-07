@@ -1,10 +1,15 @@
 import React from 'react'
+import { assets } from '../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 const BikeCard = ({bike}) => {
     
     const currency =import.meta.env.VITE_CURRENCY
+    const navigate=useNavigate()
+
   return (
-    <div className='group rounded-xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-500 cursor-pointer'>
+    <div onClick={() => { navigate(`/bike-details/${bike._id}`); scrollTo(0,0) }}
+    className='group rounded-xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-500 cursor-pointer'>
 
         <div className='relative h-48 overflow-hidden'>
             <img src={bike.image} alt="Bike Image"  className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'/>
@@ -25,19 +30,19 @@ const BikeCard = ({bike}) => {
                 </div>
             </div>
 
-            <div className='mt-4 grid rid-cols-2 gap-y-2 text-gray-600'>
+            <div className='mt-4 grid grid-cols-2 gap-y-2 text-gray-600'>
                 <div className='flex items-center text-sm text-muted-foreground'>
                     <img src={assets.car_icon} alt=""  className='h-4 mr-2'/>
-                    <span>{bike.bike_type}</span>
-                </div>
-
-                <div className='flex items-center text-sm text-muted-foreground'>
-                    <img src={assets.fuel_icon} alt=""  className='h-4 mr-2'/>
                     <span>{bike.engine_type}</span>
                 </div>
 
                 <div className='flex items-center text-sm text-muted-foreground'>
-                    <img src={assets.user_icon} alt=""  className='h-4 mr-2'/>
+                    <img src={assets.fuel_icon} alt=""  className='h-4 mr-2'/>
+                    <span>{bike.mielage}</span>
+                </div>
+
+                <div className='flex items-center text-sm text-muted-foreground'>
+                    <img src={assets.users_icon} alt=""  className='h-4 mr-2'/>
                     <span>{bike.seating_capacity}</span>
                 </div>
 
