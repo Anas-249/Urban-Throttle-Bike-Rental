@@ -123,7 +123,7 @@ export const dummyCarData = [
         "transmission": "Semi-Automatic",
         "pricePerDay": 500,
         "location": "Delhi",
-        "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
+        "description": "The Royal Enfield Classic 350 is a mid-size cruiser motorcycle produced by Royal Enfield. It is known for its retro design, comfortable ride, and signature thumping engine.",
         "isAvaliable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
         "engine_type":"350 cc",
