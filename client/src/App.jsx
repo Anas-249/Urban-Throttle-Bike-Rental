@@ -6,6 +6,7 @@ import CarDetails from './pages/CarDetails'
 import Bikes from './pages/Bikes'
 import MyBookings from './pages/MyBookings'
 import Fotter from './components/Fotter'
+import Login from './components/Login'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
   console.log('App is rendering, current path:', useLocation().pathname)
   return (
     <>
+      {showLogin && <Login setShowLogin={setShowLogin} />}
       {!isOwnerPath && <Navbar setShowLogin={setShowLogin} />}
 
 
